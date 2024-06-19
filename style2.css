@@ -1,0 +1,105 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#task-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.task-buttons button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-buttons button.edit-btn {
+    background: #0275d8;
+}
+
+.task-buttons button.complete-btn {
+    background: #5bc0de;
+}
+
+.task-buttons button.complete-btn:hover {
+    background: #31b0d5;
+}
+
+.task-buttons button.edit-btn:hover {
+    background: #025aa5;
+}
+
+.task-buttons button:hover {
+    background: #c9302c;
+}
